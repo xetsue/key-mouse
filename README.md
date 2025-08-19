@@ -14,7 +14,7 @@ This script, written in AutoHotkey, allows you to control your cursor, mouse but
 
 #### Portable File
 Download from [Releases](https://github.com/xetsue/key-mouse/) section, place anywhere on your drive and start the program. 
-It will be minimized to `system hidden tray` by default. For usage manual refer to [Usage](https://github.com/xetsue/key-mouse/edit/main/README.md#usage) section below.
+It will be minimized to `system hidden tray` by default. For usage manual refer to [Usage](https://github.com/xetsue/key-mouse/?tab=readme-ov-file#usage) section below.
 
 #### Manual Creation
 Refer to `Code` folder.
