@@ -1,25 +1,31 @@
-# Keyboard & Mouse Control Script
+# Key-Mouse
 
-This script, written in AutoHotkey, allows you to control your cursor, mouse buttons, and scrolling with your keyboard. It's designed to be a replacement for mouse usage in certain situations (I personally made this because I can.)
+This script was written in AutoHotkey - it allows you to simulate your mouse / cursor control by using your keyboard. It's designed to be a replacement for accessibility usage and for QoL purposes.
 
----
 
-## Getting Started
+# Getting Started
+Please note that the script may get false positives from your anti-virus due to its nature of simulating mouse control. If this happens, please isolate the script in a folder and whitelist either the script alone or the folder itself from getting blocked. If you are worried of the credibility of the script itself do take your time to check the raw code and manually compile them with AHK dashboard.
 
-### Prerequisites
+### Alpha / Legacy Prerequisites
 
-* **AutoHotkey:** You need to have AutoHotkey installed on your system to run this script. You can download it from the official website.
+* **V1 AutoHotkey**
+> Used in Alpha version
 
-### Installation
+### 2026's version Prerequisites
+
+* **V2 AutoHotkey:** 
+> Post Alpha version, the script was updated to use v2 AHK to be more compact and lightweight.
+
+# Installation
 
 #### Portable File
 Download from [Releases](https://github.com/xetsue/key-mouse/releases/) section, place anywhere on your drive and start the program. 
 It will be minimized to `system hidden tray` by default. For usage manual refer to [Usage](https://github.com/xetsue/key-mouse/?tab=readme-ov-file#usage) section below.
 
-#### Manual Creation
+#### Manual Compiling
 Refer to `Code` folder.
-1.  Save the code as a file named `Script.ahk`.
-2.  Run the script by double-clicking the file.
+1.  Download desired `.ahk` version from ./main/Code/ or Save the code as any intended filename such as  `example.ahk`.
+2.  Run Auto Hotkey > Compile .exe > select the downloaded file > Use 64bit binary > customize other settings such as name or icon accordingly > Compile.
 
 ---
 
@@ -27,10 +33,58 @@ Refer to `Code` folder.
 
 ### Activation
 
-* Press **Win + CapsLock** to toggle the script on and off.
-* A variable named `Toggle` is used to track the script's state, and it is set to `True` when active.
+* Run the script.
+* Press **Win + Capslock** to toggle the script on and off.
+* Activate Capslock to start using its functionality.
+> If capslock is not active at this state, the script will not affect any key input. I added this as a safety switch to avoid accidental runs.
 
-### Default Key Bindings
+
+## `v2026` Key Bindings
+Changelog: 
+Added keybind `Profile 1` and `Progile 2`.
+On startup, `Profile 1` is used by default, to switch between profiles, use keyboard button `1` and `2` while Capslock is active after turning the script on with `Win + Capslock`.
+
+### `Profile 1` Key Bindings
+
+| Action | Key(s) |
+| :--- | :--- |
+| **Toggle Script** | **Win + CapsLock** |
+| Move Cursor Up | **W** |
+| Move Cursor Down | **S** |
+| Move Cursor Left | **A** |
+| Move Cursor Right | **D** |
+| Slow Cursor Speed | **Shift + W / A / S / D** |
+| Left Click | **E** or **Space** |
+| Right Click | **Q** or **Shift + Space** |
+| Continuous Scroll Up | **Arrow Up** |
+| Continuous Scroll Down | **Arrow Down** |
+
+
+### `Profile 2` Key Bindings
+
+| Action | Key(s) |
+| :--- | :--- |
+| **Toggle Script** | **Win + CapsLock** |
+| Move Cursor Up | **P** |
+| Move Cursor Down | **;** |
+| Move Cursor Left | **L** |
+| Move Cursor Right | **'** |
+| Slow Cursor Speed | **Shift + P / L / ; / '** |
+| Left Click | **O** or **Space** |
+| Right Click | **[** or **Shift + Space** |
+| Continuous Scroll Up | **W** |
+| Continuous Scroll Down | **S** |
+| Mouse Button 4 (Back) | **A** |
+| Mouse Button 5 (Forward) | **D** |
+| Continuous Scroll Down (Mouse Button 4) | **A** (acts as a toggle)|
+| Continuous Scroll Up (Mouse Button 5) | **D** (acts as a toggle)|
+
+
+---
+
+## Archived Legacy Manual
+```
+## `Alpha` Key Bindings
 
 | Action | Key(s) |
 | :--- | :--- |
